@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #dadada;
+        padding: 20px 50px;
+      }
+
+      /* Bug link active
+        Tidak bisa aktif ketika di klik
+      */
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .logo {
+        font-weight: 900;
+        font-size: 20px;
+      }
+      .nav-left,
+      .nav-end {
+        display: flex;
+        align-items: center;
+      }
+      .nav-left a,
+      .nav-end a {
+        padding: 0 10px;
+      }
+      .nav-left a:hover,
+      .nav-end a:hover {
+        text-decoration: underline;
+        color: chocolate;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        color: white;
+      }
+      .header-left {
+        width: 70%;
+        height: 500px;
+      }
+      .header-card-left {
+        width: 100%;
+        height: 500px;
+        background-image: url("https://source.unsplash.com/700x400?abstract");
+        background-size: cover;
+        display: flex;
+        align-items: end;
+      }
+      .header-card-left > div {
+        padding: 30px 50px;
+      }
+      .header-right {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+      }
+      .header-card-right {
+        width: 100%;
+        height: 250px;
+        background-image: url("https://source.unsplash.com/350x250?abstract");
+        background-size: cover;
+        display: flex;
+        align-items: end;
+      }
+      .header-card-right > div {
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="nav-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+          width="24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Product</a>
+      </div>
+
+      <a href="#" class="logo">Artalopa</a>
+
+      <div class="nav-end">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Product</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+          width="24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- header -->
+    <div class="header">
+      <div class="header-left">
+        <div class="header-card-left">
+          <div>
+            <p class="label">header 3</p>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+            <div>
+              <span>21 Hours ago</span>
+              <span>17 Comments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-card-right">
+          <div>
+            <p class="label">Kategori 1</p>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+            <div>
+              <span>21 Hours ago</span>
+              <span>17 Comments</span>
+            </div>
+          </div>
+        </div>
+        <div class="header-card-right">
+          <div>
+            <p class="label">Kategori 1</p>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+            <div>
+              <span>21 Hours ago</span>
+              <span>17 Comments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+
+    <!-- latest post -->
+    <div class="latest-post">
+      <h1>Latest Post</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200?abstract" alt="" />
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <div>
+          <span>21 Hours ago</span>
+          <span>17 Comments</span>
+        </div>
+      </div>
+    </div>
+    <!-- end latest post -->
+  </body>
+</html>
